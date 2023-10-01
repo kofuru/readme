@@ -54,3 +54,7 @@ public class HelloWorld : MonoBehaviour
 ### Оформить отчет в виде документации на github. 
 
 ## Выводы
+
+## Powered by
+
+**BigDigital Team: Denisov | Fadeev | Panov**
