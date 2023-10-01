@@ -18,12 +18,14 @@
 Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
 
 ## Задание 1
+### Написать программу Hello World на Python с запуском в Jupiter Notebook.
 
 ![image](https://github.com/kofuru/readme/assets/127126154/559fce54-b9ec-48d5-b595-25a67c774b07)
 
 ![image](https://github.com/kofuru/readme/assets/127126154/460f886f-386f-4ddc-8d1f-cb351cfc255b)
 
 ## Задание 2
+### Написать программу Hello World на C# с запуском на Unity. 
 
 ```py
 using System;
@@ -44,6 +46,6 @@ public class HelloWorld : MonoBehaviour
 ![image](https://github.com/kofuru/readme/assets/127126154/d81fba65-31cf-495c-bce5-28c0d1e0cf1d)
 
 ## Задание 3
-### 
+### Оформить отчет в виде документации на github. 
 
 ## Выводы
