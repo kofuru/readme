@@ -1,5 +1,5 @@
 # АНАЛИЗ ДАННЫХ И ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ [in GameDev]
-Отчет по лабораторной работе #1 выполнил(а):
+Отчет по лабораторной работе #1 выполнила:
 - Новикова Мария Сергеевна
 - РИ220935
 
@@ -27,6 +27,9 @@
 
 ![image](https://github.com/kofuru/readme/assets/127126154/559fce54-b9ec-48d5-b595-25a67c774b07)
 
+```py
+print('Hello, World')
+```
 ![image](https://github.com/kofuru/readme/assets/127126154/460f886f-386f-4ddc-8d1f-cb351cfc255b)
 
 ## Задание 2
@@ -51,8 +54,11 @@ public class HelloWorld : MonoBehaviour
 ![image](https://github.com/kofuru/readme/assets/127126154/d81fba65-31cf-495c-bce5-28c0d1e0cf1d)
 
 ## Задание 3
-### Оформить отчет в виде документации на github. 
+### Оформить отчет в виде документации на github (markdown-разметка).
 
+```py
+
+```
 ## Выводы
 
 ## Powered by
