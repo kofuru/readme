@@ -14,6 +14,11 @@
 - к.э.н., доцент Панов М.А.
 - ст. преп., Фадеев В.О.
 
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+
 ## Цель работы
 Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
 
