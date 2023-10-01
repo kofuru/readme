@@ -60,7 +60,7 @@ public class HelloWorld : MonoBehaviour
 using System;
 namespace HelloWorld
 {
-    class Hello 
+    class Start 
     {
         static void Main() 
         {
