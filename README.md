@@ -24,7 +24,19 @@
 ![image](https://github.com/kofuru/readme/assets/127126154/460f886f-386f-4ddc-8d1f-cb351cfc255b)
 
 ## Задание 2
-### 
+### using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HelloWorld : MonoBehaviour
+{
+    void Start()
+    {
+        Debug.Log("Hello, World!");
+    }
+}
+
 ## Задание 3
 ### 
 
