@@ -57,7 +57,17 @@ public class HelloWorld : MonoBehaviour
 ### Оформить отчет в виде документации на github (markdown-разметка).
 
 ```py
-
+using System;
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
 ```
 ## Выводы
 
