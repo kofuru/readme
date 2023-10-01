@@ -19,6 +19,8 @@
 
 ## Задание 1
 ### 
+![image](https://github.com/kofuru/readme/assets/127126154/ef1ffb21-3411-4d54-84a3-4556a98a0ae6)
+
 ## Задание 2
 ### 
 ## Задание 3
