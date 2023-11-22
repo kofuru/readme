@@ -66,8 +66,7 @@
 
 ## Задание 3
 ### Настроить на сцене Unity воспроизведение звуковых файлов, описывающих динамику изменения выбранной переменной. 
-```py
-
+```C#
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -116,7 +115,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     IEnumerator GoogleSheets()
     {
-        //https://docs.google.com/spreadsheets/d/1H8NQd7gLpebbL2FP3OfZFlVCu7aluN6y4JKxrS4H7tE/edit?usp=sharing
         UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1H8NQd7gLpebbL2FP3OfZFlVCu7aluN6y4JKxrS4H7tE/values/Лист1?key=AIzaSyA8cQwYwFO0Zl0RYh3XIhfdmc4xNKHd7a4");
         yield return curentResp.SendWebRequest();
         string rawResp = curentResp.downloadHandler.text;
@@ -160,7 +158,6 @@ public class NewBehaviourScript : MonoBehaviour
         i++;
     }
 }
-
 ```
 ## Выводы
 
