@@ -95,19 +95,19 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (dataSet.Count == 0) return;
 
-        if (dataSet["Mon_" + i.ToString()] > 100 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] > 90 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioGood());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
         }
 
-        if (dataSet["Mon_" + i.ToString()] > 10 & dataSet["Mon_" + i.ToString()] < 100 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] > 3 & dataSet["Mon_" + i.ToString()] < 90 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioNormal());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
         }
 
-        if (dataSet["Mon_" + i.ToString()] <= 10 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] <= 3 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioBad());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
