@@ -84,7 +84,6 @@ public class NewBehaviourScript : MonoBehaviour
     private bool statusStart = false;
     private int i = 1;
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(GoogleSheets());
@@ -95,19 +94,19 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (dataSet.Count == 0) return;
 
-        if (dataSet["Mon_" + i.ToString()] > 90 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] > 500 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioGood());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
         }
 
-        if (dataSet["Mon_" + i.ToString()] > 3 & dataSet["Mon_" + i.ToString()] < 90 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] > 200 & dataSet["Mon_" + i.ToString()] < 500 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioNormal());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
         }
 
-        if (dataSet["Mon_" + i.ToString()] <= 3 & statusStart == false & i != dataSet.Count)
+        if (dataSet["Mon_" + i.ToString()] <= 200 & statusStart == false & i != dataSet.Count)
         {
             StartCoroutine(PlaySelectAudioBad());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
@@ -116,7 +115,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     IEnumerator GoogleSheets()
     {
-        UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1H8NQd7gLpebbL2FP3OfZFlVCu7aluN6y4JKxrS4H7tE/values/Лист1?key=AIzaSyA8cQwYwFO0Zl0RYh3XIhfdmc4xNKHd7a4");
+        UnityWebRequest curentResp = UnityWebRequest.Get("https://docs.google.com/spreadsheets/d/1TmAMoCoYAgXTeppaX8ySkNvZ16edTFRV_rwBgNYcEKM/edit?usp=sharing");
         yield return curentResp.SendWebRequest();
         string rawResp = curentResp.downloadHandler.text;
         var rawJson = JSON.Parse(rawResp);
@@ -160,6 +159,9 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ```
+
+![image](https://github.com/kofuru/readme/assets/127126154/d06e0c9e-1114-4579-b93d-fb61fb0e8ae6)
+
 ## Выводы
 
 В ходе лабораторной работы я научилась работать с jupyter notebook. Так же научилась работать с Unity, создавая объект и прикрепляя к нему файл с рабочим кодом, тем самым начав работу кода с объектом.  
