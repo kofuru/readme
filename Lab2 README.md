@@ -64,39 +64,103 @@
 
 ![image](https://github.com/kofuru/readme/assets/127126154/b9b09dd0-0125-4870-9b10-a4a949ea61b2)
 
+## Задание 3
+### Настроить на сцене Unity воспроизведение звуковых файлов, описывающих динамику изменения выбранной переменной. 
 ```py
-using System;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+using SimpleJSON;
 
-public class HelloWorld : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
+    public AudioClip goodSpeak;
+    public AudioClip normalSpeak;
+    public AudioClip badSpeak;
+    private AudioSource selectAudio;
+    private Dictionary<string, float> dataSet = new Dictionary<string, float>();
+    private bool statusStart = false;
+    private int i = 1;
+
+    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello, World!");
+        StartCoroutine(GoogleSheets());
     }
-}
-```
-![image](https://github.com/kofuru/readme/assets/127126154/9372d52d-f732-4c12-a118-1014e82f0827)
 
-![image](https://github.com/kofuru/readme/assets/127126154/d81fba65-31cf-495c-bce5-28c0d1e0cf1d)
-
-## Задание 3
-### Оформить отчет в виде документации на github (markdown-разметка).
-
-```py
-using System;
-namespace HelloWorld
-{
-    class Start 
+    // Update is called once per frame
+    void Update()
     {
-        static void Main() 
+        if (dataSet.Count == 0) return;
+
+        if (dataSet["Mon_" + i.ToString()] > 100 & statusStart == false & i != dataSet.Count)
         {
-            Console.WriteLine("Hello, World!");
+            StartCoroutine(PlaySelectAudioGood());
+            Debug.Log(dataSet["Mon_" + i.ToString()]);
+        }
+
+        if (dataSet["Mon_" + i.ToString()] > 10 & dataSet["Mon_" + i.ToString()] < 100 & statusStart == false & i != dataSet.Count)
+        {
+            StartCoroutine(PlaySelectAudioNormal());
+            Debug.Log(dataSet["Mon_" + i.ToString()]);
+        }
+
+        if (dataSet["Mon_" + i.ToString()] <= 10 & statusStart == false & i != dataSet.Count)
+        {
+            StartCoroutine(PlaySelectAudioBad());
+            Debug.Log(dataSet["Mon_" + i.ToString()]);
         }
     }
+
+    IEnumerator GoogleSheets()
+    {
+        //https://docs.google.com/spreadsheets/d/1H8NQd7gLpebbL2FP3OfZFlVCu7aluN6y4JKxrS4H7tE/edit?usp=sharing
+        UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1H8NQd7gLpebbL2FP3OfZFlVCu7aluN6y4JKxrS4H7tE/values/Лист1?key=AIzaSyA8cQwYwFO0Zl0RYh3XIhfdmc4xNKHd7a4");
+        yield return curentResp.SendWebRequest();
+        string rawResp = curentResp.downloadHandler.text;
+        var rawJson = JSON.Parse(rawResp);
+        foreach (var itemRawJson in rawJson["values"])
+        {
+            var parseJson = JSON.Parse(itemRawJson.ToString());
+            var selectRow = parseJson[0].AsStringList;
+            dataSet.Add(("Mon_" + selectRow[0]), float.Parse(selectRow[2]));
+        }
+    }
+
+    IEnumerator PlaySelectAudioGood()
+    {
+        statusStart = true;
+        selectAudio = GetComponent<AudioSource>();
+        selectAudio.clip = goodSpeak;
+        selectAudio.Play();
+        yield return new WaitForSeconds(3);
+        statusStart = false;
+        i++;
+    }
+    IEnumerator PlaySelectAudioNormal()
+    {
+        statusStart = true;
+        selectAudio = GetComponent<AudioSource>();
+        selectAudio.clip = normalSpeak;
+        selectAudio.Play();
+        yield return new WaitForSeconds(3);
+        statusStart = false;
+        i++;
+    }
+    IEnumerator PlaySelectAudioBad()
+    {
+        statusStart = true;
+        selectAudio = GetComponent<AudioSource>();
+        selectAudio.clip = badSpeak;
+        selectAudio.Play();
+        yield return new WaitForSeconds(4);
+        statusStart = false;
+        i++;
+    }
 }
+
 ```
 ## Выводы
 
