@@ -159,6 +159,9 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ```
+В коде я изменила нужные ограничения для воспроизведения звука при нужном количестве игрового ресурса 
+
+![image](https://github.com/kofuru/readme/assets/127126154/72e1b266-562f-4b70-b2d8-7149021526db)
 
 - Добавила скрипт и звуковые файлы в Assets 
 
