@@ -55,15 +55,18 @@
 
 1. Для этого задания использую код написанный по 2 воркшопу. Поскольку игровой ресурс не имеет ограничений, то ориентируемся на самый дешевый предмет в магазине. Самый дешевый предмет стоит 4 Неугасаемого пепла, поэтому изменяем значение в коде. 
 ![image](https://github.com/kofuru/readme/assets/127126154/c75c96b2-a44c-44c9-afc1-0a24b366d369)
+![image](https://github.com/kofuru/readme/assets/127126154/264be2a1-b5f8-4afa-8544-d8917f2c02ae)
 
 
 2. Сверим полученные данные с выгрузкой в гугл таблицы.
 
-![image](https://github.com/kofuru/readme/assets/127126154/66519a43-0fe0-44b9-b542-882b7ad655ae)
+![image](https://github.com/kofuru/readme/assets/127126154/e01e9f1c-80d2-4bdd-995e-ee55351e08a0)
+
 
 3. Визуализируем данные с помозью инструментов в Google sheets
 
-![image](https://github.com/kofuru/readme/assets/127126154/b9b09dd0-0125-4870-9b10-a4a949ea61b2)
+![image](https://github.com/kofuru/readme/assets/127126154/f4cb0661-4df9-4ee3-b490-59b2e0dccba1)
+
 
 ## Задание 3
 ### Настроить на сцене Unity воспроизведение звуковых файлов, описывающих динамику изменения выбранной переменной. 
