@@ -160,7 +160,12 @@ public class NewBehaviourScript : MonoBehaviour
 }
 ```
 
-![image](https://github.com/kofuru/readme/assets/127126154/d06e0c9e-1114-4579-b93d-fb61fb0e8ae6)
+- Добавила скрипт и звуковые файлы в Assets 
+
+![image](https://github.com/kofuru/readme/assets/127126154/62703d2d-6e0d-47b3-b5a0-b7e6ee4f53cc)
+
+![image](https://github.com/kofuru/readme/assets/127126154/f82d2548-679f-4040-9d78-952d4c4fc3a1)
+
 
 - Подключила к объетку скрипт с измененными условиями и добавила звуковые файлы 
 ![image](https://github.com/kofuru/readme/assets/127126154/f61f05d3-2742-4f57-8476-1d1aa730b8ab)
