@@ -56,10 +56,34 @@
 
 ## Задание 3
 ### Решение в 80+ баллов должно заполнять google-таблицу данными из Python. В Python данные также должны быть визуализированы.
-```
-using System.Collections;
+![image](https://github.com/kofuru/readme/assets/127126154/336b5314-1ea4-472a-994a-fade214e6a2b)
 
 ```
+import gspread
+import numpy as np
+gc = gspread.service_account(filename='unitydatascience-403720-1000ece0e366.json')
+sh = gc.open("UnityWorkshop3")
+speed = 4.00
+leftRightDistant = 10.00
+chanceDirection = 0.01
+timeBetweenEgg = 2.00
+i = 0
+end = 8
+while i <= end:
+    tempRand = np.random.randint(-100, 100, 3) 
+    i += 1
+    if i == 0:
+        continue
+    else:
+        sh.sheet1.update(('A' + str(i+1)), i)
+        sh.sheet1.update(('B' + str(i+2)), speed+2.4*i+(tempRand[0]/1000))
+        sh.sheet1.update(('C' + str(i+2)), leftRightDistant+0.3*i+(tempRand[2]/1000))
+        sh.sheet1.update(('D' + str(i+2)), chanceDirection+0.007*i)
+        sh.sheet1.update(('E' + str(i+2)), timeBetweenEgg-0.2*i+(tempRand[1]/1000))
+        print('st')
+
+```
+![image](https://github.com/kofuru/readme/assets/127126154/13f55d0f-b8ae-494c-a39c-e1701569cfa6)
 
 ## Выводы
 
