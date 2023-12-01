@@ -69,6 +69,8 @@
 ![image](https://github.com/kofuru/readme/assets/127126154/4b605e16-5af5-4a30-9fb1-90bdd6bec888)
 
 ### OR
+![image](https://github.com/kofuru/readme/assets/127126154/9522efd5-6458-4847-9396-e04f582b42c5)
+![image](https://github.com/kofuru/readme/assets/127126154/8f778869-b524-49ba-a0db-e11f6fc493e6)
 
 ### XOR
 
