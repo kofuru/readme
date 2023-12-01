@@ -44,7 +44,7 @@
 ### AND - работает корректно
 ![image](https://github.com/kofuru/readme/assets/127126154/fd6a3e39-150d-454e-a280-318915f73564)
 
-### HAND - работает корректно
+### NAND - работает корректно
 ![image](https://github.com/kofuru/readme/assets/127126154/c8a45c52-031b-4249-8349-2935999a11ae)
 
 ### XOR - не корректен 
@@ -59,10 +59,20 @@
   
 ## Задание 3
 ### Построить визуальную модель работы 'перцептрона' на сцене Unity.
-```
 
+-Создаём кубы и платформу. 
 
-```
+![image](https://github.com/kofuru/readme/assets/127126154/328dc0b2-1f04-49ab-92cd-6c63513f1ae3)
+
+### AND
+![image](https://github.com/kofuru/readme/assets/127126154/7d4f2753-d50d-4add-a6dc-96e18d2099be)
+![image](https://github.com/kofuru/readme/assets/127126154/4b605e16-5af5-4a30-9fb1-90bdd6bec888)
+
+### OR
+
+### XOR
+
+### NAND
 
 
 ## Выводы
