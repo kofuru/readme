@@ -73,8 +73,12 @@
 ![image](https://github.com/kofuru/readme/assets/127126154/8f778869-b524-49ba-a0db-e11f6fc493e6)
 
 ### XOR
+![image](https://github.com/kofuru/readme/assets/127126154/fcef95ab-15f1-4b76-a12a-3f3350089352)
+![image](https://github.com/kofuru/readme/assets/127126154/e3627a5a-236b-4c1e-82fe-f2990d5f7fd9)
 
 ### NAND
+![image](https://github.com/kofuru/readme/assets/127126154/1e6ea555-38c2-416e-bd03-50a04000fbfb)
+![image](https://github.com/kofuru/readme/assets/127126154/b7de3ffe-7f68-4c30-80e4-7aca51dd4bb3)
 
 
 ## Выводы
