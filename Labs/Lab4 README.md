@@ -40,10 +40,14 @@
 ![image](https://github.com/kofuru/readme/assets/127126154/9ceb1887-3dc4-42c6-8974-f4e5193d81df)
 
 ### AND - работает корректно
+![image](https://github.com/kofuru/readme/assets/127126154/fd6a3e39-150d-454e-a280-318915f73564)
 
 ### HAND - работает корректно
+![image](https://github.com/kofuru/readme/assets/127126154/c8a45c52-031b-4249-8349-2935999a11ae)
 
 ### XOR - не корректен 
+![image](https://github.com/kofuru/readme/assets/127126154/8cea4580-5711-4cfa-a275-fbe27a3235f6)
+![image](https://github.com/kofuru/readme/assets/127126154/4e143590-cc85-434c-a554-7fe28a47f65c)
 
 ## Задание 2
 ### 
